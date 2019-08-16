@@ -1,0 +1,29 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Movies GraphQL Server",
+  "main": "app.js",
+  "author": "Obasaju Joshua",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server/app.js",
+    "migrate": "sequelize db:migrate",
+    "undo-migrate": "sequelize db:migrate:undo"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2",
+    "graphql-yoga": "^1.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.12.1",
+    "sequelize": "^5.15.0",
+    "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
