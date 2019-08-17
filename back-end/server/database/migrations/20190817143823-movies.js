@@ -7,7 +7,7 @@ module.exports = {
         allowNull: false,
         primaryKey: true,
         type: Sequelize.INTEGER,
-        autoIncrement: true
+        autoIncrement: true,
       },
       title: {
         type: Sequelize.STRING,
@@ -18,6 +18,9 @@ module.exports = {
       },
       rating: {
         type: Sequelize.INTEGER,
+      },
+      scoutbase_rating: {
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,

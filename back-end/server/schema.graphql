@@ -14,5 +14,29 @@ type User {
 }
 
 type Query {
-  link: String!
+  movies: [movie]
+  onemovie(title: String!): movie
 }
+
+type movie {
+  scoutbase_rating: String
+  title: String
+  year: Int
+  rating: Int
+  actors: [actor]
+  directors: [director]
+}
+
+type actor {
+  name: String
+  birthday: Date
+  country: String
+}
+
+type director {
+  name: String
+  birthday: Date
+  country: String
+}
+
+scalar Date

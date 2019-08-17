@@ -1,5 +1,6 @@
 "use strict";
 const uuid = require("uuid/v4");
+const { generateString } = require("../../utils/global");
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -10,18 +11,21 @@ module.exports = {
           title: "The Disaster Artist",
           year: 2017,
           rating: 7,
+          scoutbase_rating: generateString(),
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
         },
         {
           title: "Logan",
           year: 2017,
+          scoutbase_rating: generateString(),
           rating: 8,
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
         },
         {
           title: "Cloverfield Lane",
+          scoutbase_rating: generateString(),
           year: 2016,
           rating: 7,
           updatedAt: "2019-07-01T06:51:46.357Z",
@@ -30,6 +34,7 @@ module.exports = {
         {
           title: "There Billboards Outside Ebbing, Missouri",
           year: 2017,
+          scoutbase_rating: generateString(),
           rating: 8,
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
@@ -37,6 +42,7 @@ module.exports = {
         {
           title: "Captain America: Civil War",
           year: 2016,
+          scoutbase_rating: generateString(),
           rating: 8,
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
@@ -44,6 +50,7 @@ module.exports = {
         {
           title: "The Nice Guys",
           year: 2017,
+          scoutbase_rating: generateString(),
           rating: 7,
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
@@ -52,6 +59,7 @@ module.exports = {
           title: "Kong: Skull Island",
           year: 2017,
           rating: 7,
+          scoutbase_rating: generateString(),
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
         },
@@ -59,6 +67,7 @@ module.exports = {
           title: "Get Out",
           year: 2017,
           rating: 8,
+          scoutbase_rating: generateString(),
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
         },
@@ -66,6 +75,7 @@ module.exports = {
           title: "Thor: Ragnarok",
           year: 2017,
           rating: 8,
+          scoutbase_rating: generateString(),
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
         },
@@ -73,6 +83,7 @@ module.exports = {
           title: "Baby Driver",
           year: 2017,
           rating: 8,
+          scoutbase_rating: generateString(),
           updatedAt: "2019-07-01T06:51:46.357Z",
           createdAt: "2019-07-01T06:51:46.357Z",
         },

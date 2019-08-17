@@ -1,12 +1,13 @@
 const { createUser, login } = require("./user");
+const { movies, onemovie } = require("./movie");
 
 // Resolvers
 module.exports = {
   resolvers: {
     Mutation: {
       createUser,
-      login
+      login,
     },
-    Query: {},
+    Query: { movies, onemovie },
   },
 };
