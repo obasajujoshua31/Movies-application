@@ -24,6 +24,7 @@ const options = {
   port: PORT,
   endpoint: "/graphql",
 };
+
 server.start(options, ({ port: PORT }) =>
   console.log(`Server is running on http://localhost:${PORT}`)
 );

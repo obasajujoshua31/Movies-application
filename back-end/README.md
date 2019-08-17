@@ -81,3 +81,28 @@ mutation login($username: String, $password: String) {
 7. `/graphql` must be accessible for external clients.
 
 8. End.
+
+
+
+
+// Todo 
+
+Create table for movies and create 10 seed data
+create table for authors and seed 10 authors
+create table for directors and seed 10 directors
+
+
+movies - title, year, rating
+
+actors - name, birthday, country,
+
+directors - name, birthday, country
+
+
+movies has many actors
+actors has many movies
+
+movies has many directors
+
+
+directors has many movies
