@@ -46,7 +46,7 @@ module.exports = (sequelize, Sequelize) => {
     return global.generateToken(this.id);
   };
 
-  user.prototype.confirmPassword = function(password) {
+  user.prototype.matchPassword = function(password) {
     return global.comparePassword(password, this.password);
   };
 
