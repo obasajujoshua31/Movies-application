@@ -8,7 +8,9 @@
   "scripts": {
     "start": "nodemon server/app.js",
     "migrate": "sequelize db:migrate",
-    "undo-migrate": "sequelize db:migrate:undo"
+    "undo-migrate": "sequelize db:migrate:undo:all",
+    "seed": "sequelize db:seed:all",
+    "reset:db": "npm run undo-migrate && npm run migrate && npm run seed"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -16,12 +18,14 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
+    "faker": "^4.1.0",
     "graphql": "^14.4.2",
     "graphql-yoga": "^1.18.1",
     "jsonwebtoken": "^8.5.1",
     "pg": "^7.12.1",
     "sequelize": "^5.15.0",
-    "sequelize-cli": "^5.5.0"
+    "sequelize-cli": "^5.5.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
