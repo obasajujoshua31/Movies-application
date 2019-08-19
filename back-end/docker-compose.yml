@@ -1,0 +1,23 @@
+version: "3.1"
+
+services:
+  app:
+    image: joshua-movies
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; yarn reset:db; yarn start'
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=$DATABASE_URL
+      - JWT_SECRET=$JWT_SECRET
+      - PORT=$PORT
+    ports:
+      - "9000:9000"
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: Movies
+      POSTGRES_USER: joshua
+    ports:
+      - "5435:5432"
